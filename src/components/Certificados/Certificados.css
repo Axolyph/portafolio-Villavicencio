@@ -1,0 +1,117 @@
+.certificados-section {
+    padding: 5rem 5%;
+    background-color: #0b0f19;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+}
+
+.certificados-container {
+    max-width: 1200px;
+    width: 100%;
+}
+
+.certificados-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 2rem;
+    margin-top: 2.5rem;
+}
+
+@media (max-width: 600px) {
+    .certificados-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.certificado-card {
+    background-color: #111a2e;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 2rem;
+}
+
+.cert-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.2rem;
+}
+
+.cert-badge {
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 0.3rem 0.7rem;
+    border-radius: 20px;
+    border: 1px solid;
+}
+
+.badge-complete {
+    color: #6ee7b7;
+    /* Color Menta */
+    border-color: rgba(110, 231, 183, 0.3);
+    background-color: rgba(110, 231, 183, 0.05);
+}
+
+.badge-process {
+    color: #fbbf24;
+    /* Color Ámbar/Amarillo */
+    border-color: rgba(251, 191, 36, 0.3);
+    background-color: rgba(251, 191, 36, 0.05);
+}
+
+.cert-date {
+    font-size: 0.9rem;
+    color: #8b95a1;
+}
+
+.certificado-card h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.cert-inst {
+    color: #00d8ff;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+/* Contenedor del botón para separarlo del texto de la institución */
+.cert-download-container {
+    margin-top: 1.5rem;
+}
+
+/* Estilos del botón de descarga */
+.btn-download {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #00d8ff;
+    /* Tu color cian de acento */
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 0.6rem 1.2rem;
+    border: 1px solid rgba(0, 216, 255, 0.2);
+    border-radius: 8px;
+    background-color: rgba(0, 216, 255, 0.02);
+    transition: all 0.3s ease;
+}
+
+/* Efecto Hover */
+.btn-download:hover {
+    background-color: rgba(0, 216, 255, 0.1);
+    border-color: #00d8ff;
+    transform: translateY(-2px);
+}
+
+/* Icono SVG animado o sutil */
+.download-icon {
+    transition: transform 0.3s ease;
+}
+
+.btn-download:hover .download-icon {
+    transform: translateY(2px);
+    /* Pequeño empuje hacia abajo al hacer hover */
+}

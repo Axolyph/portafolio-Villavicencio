@@ -1,0 +1,59 @@
+.servicios-section {
+    padding: 5rem 5%;
+    background-color: #0b0f19;
+    /* Mismo fondo que el Navbar y Banner */
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+}
+
+.servicios-container {
+    max-width: 1200px;
+    width: 100%;
+}
+
+.servicios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2.5rem;
+}
+
+.servicio-card {
+    background-color: #111a2e;
+    /* Mismo tono de las tarjetas de habilidades */
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 2.5rem;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.servicio-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(0, 216, 255, 0.3);
+    /* Brillo cian al pasar el mouse */
+}
+
+.servicio-icon-box {
+    background-color: rgba(0, 216, 255, 0.1);
+    color: #00d8ff;
+    /* Color de acento cian */
+    padding: 0.8rem;
+    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.servicio-card h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.servicio-card p {
+    color: #8b95a1;
+    line-height: 1.7;
+    font-size: 0.95rem;
+}
