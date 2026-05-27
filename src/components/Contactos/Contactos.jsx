@@ -1,13 +1,14 @@
 import { useState } from 'react';
+import emailjs from '@emailjs/browser';
+import Swal from 'sweetalert2';
 import './Contactos.css';
 const Contacto = () => {
-    // Estado centralizado para el formulario (Formulario Controlado)
     const [formulario, setFormulario] = useState({
         nombre: '',
         email: '',
         mensaje: ''
     });
-    // Función para manejar los cambios en los inputs
+    const [cargando, setCargando] = useState(false);
     const manejarCambio = (e) => {
         const { name, value } = e.target;
         setFormulario({
@@ -15,21 +16,53 @@ const Contacto = () => {
             [name]: value
         });
     };
-    // Función para simular el envío
-    const manejarEnvio = (e) => {
+    const manejarEnvio = async (e) => {
         e.preventDefault();
-        alert(`¡Gracias por tu mensaje, ${formulario.nombre}! Te contactaré pronto.`);
-        // Limpiamos el formulario después de enviar
-        setFormulario({ nombre: '', email: '', mensaje: '' });
+        setCargando(true);
+        try {
+            const templateParams = {
+                nombre: formulario.nombre,
+                email: formulario.email,
+                mensaje: formulario.mensaje
+            };
+            await emailjs.send(
+                import.meta.env.VITE_EMAILJS_SERVICE_ID,
+                import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+                templateParams,
+                import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+            );
+            Swal.fire({
+                title: '¡Mensaje Enviado!',
+                text: 'Gracias por contactarme. Te responderé a la brevedad.',
+                icon: 'success',
+                confirmButtonColor: '#00d8ff',
+                background: '#111a2e',
+                color: '#ffffff'
+            });
+            setFormulario({ nombre: '', email: '', mensaje: '' });
+        } catch (error) {
+            console.error('Error al enviar el mensaje:', error);
+            Swal.fire({
+                title: 'Error',
+                text: 'Hubo un problema al enviar el mensaje. Inténtalo más tarde.',
+                icon: 'error',
+                confirmButtonColor: '#00d8ff',
+                background: '#111a2e',
+                color: '#ffffff'
+            });
+        } finally {
+            setCargando(false);
+        }
     };
     return (
         <section id="contacto" className="contacto-section">
+            <h2 className="contacto-main-title">Trabajemos Juntos</h2>
             <div className="contacto-container">
-                <h2 className="section-title">Trabajemos Juntos</h2>
                 <div className="contacto-grid">
                     {/* =====================================
-                        COLUMNA IZQUIERDA: INFORMACIÓN
-                    ====================================== */}
+COLUMNA IZQUIERDA: INFORMACIÓN
+(¡Restaurada!)
+====================================== */}
                     <div className="contacto-info">
                         <h3 className="info-title">Ponte en Contacto</h3>
                         <p className="info-desc">
@@ -70,14 +103,14 @@ const Contacto = () => {
                                 </div>
                                 <div>
                                     <span className="item-label">Ubicación</span>
-                                    <p className="item-text"> Lima - Perú</p>
+                                    <p className="item-text">Lima - Perú</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     {/* =====================================
-                        COLUMNA DERECHA: FORMULARIO
-                    ====================================== */}
+COLUMNA DERECHA: FORMULARIO
+====================================== */}
                     <div className="contacto-form-wrapper">
                         <form onSubmit={manejarEnvio} className="contacto-form">
                             <div className="form-group">
@@ -90,6 +123,7 @@ const Contacto = () => {
                                     onChange={manejarCambio}
                                     placeholder="Tu nombre"
                                     required
+                                    disabled={cargando}
                                 />
                             </div>
                             <div className="form-group">
@@ -102,6 +136,7 @@ const Contacto = () => {
                                     onChange={manejarCambio}
                                     placeholder="tu@email.com"
                                     required
+                                    disabled={cargando}
                                 />
                             </div>
                             <div className="form-group">
@@ -114,9 +149,15 @@ const Contacto = () => {
                                     placeholder="Cuéntame sobre tu proyecto..."
                                     rows="5"
                                     required
+                                    disabled={cargando}
                                 ></textarea>
                             </div>
-                            <button type="submit" className="btn-submit">Enviar Mensaje</button>
+                            <button type="submit" className="btn-submit"
+
+                                disabled={cargando}>
+
+                                {cargando ? 'Enviando...' : 'Enviar Mensaje'}
+                            </button>
                         </form>
                     </div>
                 </div>
