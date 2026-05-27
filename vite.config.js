@@ -7,7 +7,7 @@ const isGithubPages = process.env.GITHUB_PAGES === 'true'
 export default defineConfig({
   base: isGithubPages ? '/portafolio-Villavicencio/' : '/',
   build: {
-    outDir: 'docs',
+    outDir: isGithubPages ? 'docs' : 'dist',
   },
   plugins: [react()],
 })
