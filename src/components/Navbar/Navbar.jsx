@@ -13,8 +13,7 @@ const Navbar = () => {
             <div className={`navbar-links ${isOpen ? "open" : ""}`}>
                 {/* Al hacer clic en un enlace en móvil, cerramos el menú */}
                 <a href="#sobre-mi" onClick={() => setIsOpen(false)}>Perfil</a>
-                <a href="#tech-stack" onClick={() => setIsOpen(false)}>Tech
-                    Stack</a>
+                <a href="#tech-stack" onClick={() => setIsOpen(false)}>Habilidades</a>
                 <a href="#proyectos" onClick={() =>
                     setIsOpen(false)}>Proyectos</a>
                 <a href="#servicios" onClick={() =>

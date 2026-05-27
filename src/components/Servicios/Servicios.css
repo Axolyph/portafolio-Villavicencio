@@ -1,8 +1,8 @@
 .servicios-section {
     padding: 5rem 5%;
-    background-color: #0b0f19;
+    background-color: var(--color-fondo);
     /* Mismo fondo que el Navbar y Banner */
-    color: #ffffff;
+    color: var(--color-texto);
     display: flex;
     justify-content: center;
 }
@@ -20,9 +20,9 @@
 }
 
 .servicio-card {
-    background-color: #111a2e;
+    background-color: var(--color-superficie);
     /* Mismo tono de las tarjetas de habilidades */
-    border: 1px solid rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--color-borde);
     border-radius: 12px;
     padding: 2.5rem;
     transition: transform 0.3s ease, border-color 0.3s ease;
@@ -30,13 +30,13 @@
 
 .servicio-card:hover {
     transform: translateY(-5px);
-    border-color: rgba(0, 216, 255, 0.3);
+    border-color: rgba(var(--color-primario-rgb), 0.3);
     /* Brillo cian al pasar el mouse */
 }
 
 .servicio-icon-box {
-    background-color: rgba(0, 216, 255, 0.1);
-    color: #00d8ff;
+    background-color: rgba(var(--color-primario-rgb), 0.14);
+    color: var(--color-primario);
     /* Color de acento cian */
     padding: 0.8rem;
     border-radius: 8px;
@@ -53,7 +53,7 @@
 }
 
 .servicio-card p {
-    color: #8b95a1;
+    color: var(--color-texto-suave);
     line-height: 1.7;
     font-size: 0.95rem;
 }

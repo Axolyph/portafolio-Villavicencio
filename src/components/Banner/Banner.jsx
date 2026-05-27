@@ -25,15 +25,12 @@ const Banner = () => {
                 </h1>
                 {/* 4. Subtítulo (Rol) */}
                 <h2 className="hero-subtitle">
-                    Consultor e Instructor BI - Software | MOS Excel Expert | Power
-
-                    BI Data Analyst | Ingeniero de Sistemas </h2>
+                    ESTUDIANTE DE 3ER CICLO DE DESARROLLO DE PÁGINAS WEB EN SENATI </h2>
                 {/* 5. Descripción */}
                 <p className="hero-description">
-                    Construyo sistemas inteligentes que automatizan procesos, analizan
-                    datos y transforman la información. También desarrollo
-                    aplicaciones web funcionales para resolver necesidades reales.
-                    Consultoría de Software y BI para empresas.
+                    Desarrollo aplicaciones y páginas web responsivas utilizando tecnologías como React, Laravel, Node.js, 
+                    HTML, CSS y MySQL. Me enfoco en crear soluciones funcionales, interfaces intuitivas y 
+                    proyectos que aporten una mejor experiencia digital.
                 </p>
                 {/* 6. Botones de Acción */}
                 <div className="hero-buttons">

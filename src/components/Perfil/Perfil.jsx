@@ -22,20 +22,13 @@ const Perfil = () => {
                             <h3>Perfil profesional</h3>
                         </div>
                         <p className="card-text">
-                            Ingeniero de Sistemas Comptacionales, con experiencia en la
-                            docencia de más de 15 años, dictando clases de forma presencial y virtual
-                            en diferentes instituciones educativas de prestigio y con experiencia
-                            profesional de más de 11 años.
+                            Estudiante de Informática y Desarrollo de Páginas Web en SENATI, 
+                            actualmente cursando el 3.er ciclo, con formación orientada al desarrollo de software y aplicaciones web. 
+                            Cuento con conocimientos en tecnologías como React, Laravel, Node.js, HTML, CSS y MySQL para la creación de interfaces y sistemas web.
                             <br /><br />
-                            Cuento la Certificación Internacional en Microsoft Office
-                            Specialist (MOS) Excel Expert y PL - 300 Data Analyst Associate.
-                            Instructor CISCO y ORACLE.
-                            <br /><br />
-                            Consultoría y experiencia en desarrollo de software,
-                            utilizando tecnologías como React, Laravel, NodeJS, ExpressJS, MySQL,
-                            PostGreSQL, etc. y en desarrollo de dashboards interactivos mediante
-                            Power BI, DAX, Power Query, modelado de datos en SQL y automatizaciones
-                            con Python.
+                            Además, tengo experiencia en diseño de dashboards e interfaces mediante Figma, 
+                            modelado de bases de datos SQL y automatización de tareas con Python, enfocado en desarrollar soluciones funcionales y 
+                            mejorar procesos.
                         </p>
                     </div>
                     {/* =====================================
@@ -58,34 +51,34 @@ const Perfil = () => {
                             {/* Ítem de Educación 1 */}
                             <div className="timeline-item">
                                 <div className="timeline-header">
-                                    <h4>Ingeniería de Sistemas Computacionales</h4>
-                                    <span className="badge badge-outline">Titulado</span>
+                                    <h4>Informatica y Desarrollo de Páginas Web</h4>
+                                    <span className="badge badge-outline">En Curso</span>
                                 </div>
-                                <span className="timeline-date">UNIVERSIDAD TECNOLÓGICA DEL PERÚ</span>
+                                <span className="timeline-date"> SENATI </span>
                             </div>
                             {/* Ítem de Educación 2 */}
                             <div className="timeline-item">
                                 <div className="timeline-header">
-                                    <h4>Computación e Informática</h4>
+                                    <h4>Conceptos básicos de redes</h4>
                                     <span className="badge badge-outline">Titulado</span>
                                 </div>
-                                <span className="timeline-date">I.S.T CESCA</span>
+                                <span className="timeline-date">Cisco Networking Academy</span>
                             </div>
                             {/* Ítem de Educación 3 */}
                             <div className="timeline-item">
                                 <div className="timeline-header">
-                                    <h4>MOS Excel Expert</h4>
-                                    <span className="badge badge-outline">Certificación Internacional</span>
+                                    <h4>Conceptos Básicos de Hardware de Computadora</h4>
+                                    <span className="badge badge-outline">Titulado</span>
                                 </div>
-                                <span className="timeline-date">MICROSOFT</span>
+                                <span className="timeline-date">Cisco Networking Academy</span>
                             </div>
                             {/* Ítem de Educación 4 */}
                             <div className="timeline-item">
                                 <div className="timeline-header">
-                                    <h4>Power BI Data Analyst Associate - PL - 300</h4>
-                                    <span className="badge badge-outline">Certificación Internacional</span>
+                                    <h4>Introducción al Internet de las Cosas y Transformación Digital</h4>
+                                    <span className="badge badge-outline">Titulado</span>
                                 </div>
-                                <span className="timeline-date">MICROSOFT</span>
+                                <span className="timeline-date">Cisco Networking Academy</span>
                             </div>
                         </div>
                     </div>

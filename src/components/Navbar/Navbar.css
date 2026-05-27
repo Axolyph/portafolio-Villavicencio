@@ -6,13 +6,13 @@ ESTILOS GENERALES DEL NAVBAR
     justify-content: space-between;
     align-items: center;
     padding: 1.5rem 5%;
-    background-color: #0b0f19;
+    background-color: var(--color-fondo);
     /* Fondo oscuro elegante */
-    color: #ffffff;
+    color: var(--color-texto);
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(var(--color-negro-rgb), 0.1);
 }
 
 /* =========================================
@@ -26,7 +26,7 @@ ESTILOS GENERALES DEL NAVBAR
 }
 
 .text-cyan {
-    color: #00d8ff;
+    color: var(--color-primario);
     /* Color de acento (Cyan) */
 }
 
@@ -39,7 +39,7 @@ ESTILOS GENERALES DEL NAVBAR
 }
 
 .navbar-links a {
-    color: #a0aab2;
+    color: var(--color-texto-suave);
     text-decoration: none;
     font-size: 1rem;
     font-weight: 500;
@@ -47,7 +47,7 @@ ESTILOS GENERALES DEL NAVBAR
 }
 
 .navbar-links a:hover {
-    color: #ffffff;
+    color: var(--color-texto);
 }
 
 /* =========================================
@@ -63,7 +63,7 @@ ESTILOS GENERALES DEL NAVBAR
 .bar {
     width: 25px;
     height: 3px;
-    background-color: #ffffff;
+    background-color: var(--color-texto);
     border-radius: 2px;
     transition: all 0.3s ease;
 }
@@ -85,11 +85,11 @@ ESTILOS GENERALES DEL NAVBAR
         top: 100%;
         left: 0;
         width: 100%;
-        background-color: #0b0f19;  
+        background-color: var(--color-fondo);
         padding: 2rem 0;
         text-align: center;
         gap: 2rem;
-        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 10px 10px rgba(var(--color-negro-rgb), 0.2);
     }
 
     /* Cuando el estado isOpen es true, se añade la clase "open" */

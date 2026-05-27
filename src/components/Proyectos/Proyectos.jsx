@@ -6,7 +6,7 @@ const Proyectos = () => {
             id: 1,
             imagen: "https://www.nutrimarket.com/blog/wp-content/uploads/2020/05/cafe-por-la-manana.jpg",
             titulo: "Desarrollo de Aplicación Web - Proyeto Cafeteria",
-            descripcion: "Aplicación web de venta de calzados para varones, mujeres, niños y niñas.",
+            descripcion: "Aplicación web de venta de cafe, apodado STAR COFFEE",
             tecnologias: ["HTML5", "CSS3", "JavaScript","HeidiSQL", "PHP"],
             linkDemo: "https://proyecto-cafeteria.infinityfreeapp.com/index.php?i=1",
             linkCodigo: "https://github.com/johan-vega/proyecto-cafeteria"
@@ -15,28 +15,28 @@ const Proyectos = () => {
             id: 2,
             imagen: "https://img.magnific.com/foto-gratis/doctor-estetoscopio-cerca_23-2149191355.jpg?semt=ais_hybrid&w=740&q=80",
             titulo: "Desarrollo de Aplicación Web - Proyecto Salud ",
-            descripcion: "Aplicación web de venta de ropa para varones, mujeres, niños y niñas.",
-            tecnologias: ["HTML5", "CSS3", "JavaScript", "React", "Laravel","PostGreSQL"],
+            descripcion: "Desarrollo de una aplicación web para la gestión de citas médicas, permitiendo a los usuarios programar, modificar y cancelar citas con facilidad.",
+            tecnologias: ["HTML5", "CSS3", "JavaScript","HeidiSQL", "POSTMAN"],
             linkDemo: "https://gestion-citas.free.nf/?i=2",
-            linkCodigo: "#"
+            linkCodigo: "https://github.com/johan-vega/entregableGrupo3"
         },
         {
             id: 3,
-            imagen: "https://intikisa.pe/wp-content/uploads/2024/08/Productos_en_polvo1.png.webp",
-            titulo: "Aplicación Web de venta de productos naturales",
-            descripcion: "Aplicación web para la venta de productos naturales online.",
-            tecnologias: ["React", "Laravel", "PostGreSQL"],
-            linkDemo: "https://intikisa.pe",
-            linkCodigo: "#"
+            imagen: "https://definicion.de/wp-content/uploads/2010/10/institucion-1.jpg",
+            titulo: "Aplicación Web - Sistema de Matricula",
+            descripcion: "Aplicación web para la gestión de matrículas escolares, permitiendo a los estudiantes inscribirse en cursos, gestionar su información académica y realizar pagos en línea.",
+            tecnologias: ["HTML5", "CSS3", "HEIDISQL", "POSTMAN"],
+            linkDemo: "https://fabian-matricula.infinityfree.me/?i=1",
+            linkCodigo: "https://github.com/Axolyph/individual_repository"
         },
         {
         id: 4,
-        imagen: "https://liora.io/app/uploads/sites/7/2020/10/power-bi-logo-1.jpg",
-        titulo: "Dashboard Interactivo en Power BI",
-        descripcion: "Construcción de un Panel BI Interactivo.",
-        tecnologias: ["Power BI", "DAX", "Power Query", "Modelado de datos", "Power BI Service", "SharePoint"],
-        linkDemo: "#",
-        linkCodigo: "#"
+        imagen: "https://www.saldemar.cat/wp-content/uploads/2023/07/imagen-personal.jpg",
+        titulo: "Desarrollo de Aplicación Web - Portafolio Personal",
+        descripcion: "Desarrollo de un portafolio personal para mostrar mis proyectos, habilidades y experiencia en el desarrollo web, con un diseño moderno y responsive.",
+        tecnologias: ["HTML5", "CSS3", "REACT", "XAMMP"],
+        linkDemo: "https://portafolio-villavicencio.vercel.app/",
+        linkCodigo: "https://github.com/Axolyph/portafolio-Villavicencio"
         }
 ];
 return (

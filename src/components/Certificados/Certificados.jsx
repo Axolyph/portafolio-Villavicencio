@@ -28,7 +28,7 @@ const Certificados = () => {
         {
             id: 4,
             titulo: "Introducción al Internet de las Cosas y Transformación Digital",
-            institucion: "Centro de Idiomas",
+            institucion: "Cisco Networking Academy",
             fecha: "AÑO: 2025",
             estado: "Completado",
             link: "https://drive.google.com/file/d/16URJdb7ABntFvo5ycLvzhZeffEnuJTLD/view?usp=sharing"

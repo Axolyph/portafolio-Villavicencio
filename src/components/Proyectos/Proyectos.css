@@ -3,7 +3,7 @@ CONTENEDOR PRINCIPAL
 ========================================= */
 .proyectos-section {
     padding: 5rem 5%;
-    background-color: #0b0f19;
+    background-color: var(--color-fondo);
     display: flex;
     justify-content: center;
 }
@@ -30,15 +30,15 @@ CONTENEDOR PRINCIPAL
     TARJETA DEL PROYECTO
 ========================================= */
 .proyecto-card {
-    background-color: #111a2e;
-    border: 1px solid rgba(255, 255, 255, 0.05);
+    background-color: var(--color-superficie);
+    border: 1px solid var(--color-borde);
     border-radius: 16px;
     overflow: hidden;
     /* Clave para que la imagen no se salga de las curvas
 */
     display: flex;
     flex-direction: column;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 20px rgba(var(--color-negro-rgb), 0.2);
     transition: transform 0.3s ease;
 }
 
@@ -54,7 +54,7 @@ IMAGEN DEL PROYECTO
     height: 280px;
     object-fit: cover;
     /* Evita que la captura se deforme */
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid var(--color-borde);
 }
 
 /* =========================================
@@ -69,14 +69,14 @@ CONTENIDO Y TEXTOS
 }
 
 .proyecto-titulo {
-    color: #ffffff;
+    color: var(--color-texto);
     font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 1rem;
 }
 
 .proyecto-desc {
-    color: #8b95a1;
+    color: var(--color-texto-suave);
     line-height: 1.6;
     font-size: 1rem;
     margin-bottom: 1.5rem;
@@ -95,9 +95,9 @@ ETIQUETAS (Tags de Tecnologías)
 }
 
 .tech-tag {
-    background-color: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    color: #a0aab2;
+    background-color: rgba(var(--color-blanco-rgb), 0.05);
+    border: 1px solid var(--color-borde);
+    color: var(--color-texto-suave);
     padding: 0.4rem 0.8rem;
     border-radius: 20px;
     font-size: 0.85rem;
@@ -126,23 +126,23 @@ ETIQUETAS (Tags de Tecnologías)
 }
 
 .btn-demo {
-    color: #00d8ff;
-    border: 1px solid #00d8ff;
-    background-color: rgba(0, 216, 255, 0.05);
+    color: var(--color-primario);
+    border: 1px solid var(--color-primario);
+    background-color: rgba(var(--color-primario-rgb), 0.08);
 }
 
 .btn-demo:hover {
-    background-color: rgba(0, 216, 255, 0.15);
+    background-color: rgba(var(--color-primario-rgb), 0.2);
 }
 
 .btn-codigo {
-    color: #ffffff;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: var(--color-texto);
+    border: 1px solid rgba(var(--color-blanco-rgb), 0.2);
     background-color: transparent;
 }
 
 .btn-codigo:hover {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(var(--color-blanco-rgb), 0.1);
 }
 
 /* =========================================

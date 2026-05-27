@@ -1,10 +1,10 @@
 .footer {
-    background-color: #050810;
+    background-color: var(--color-secundario);
     /* Un tono ligeramente más oscuro para el cierre */
     padding: 2rem 5%;
-    color: #8b95a1;
+    color: var(--color-texto-suave);
     font-size: 0.9rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.03);
+    border-top: 1px solid rgba(var(--color-blanco-rgb), 0.03);
 }
 
 .footer-content {
@@ -25,7 +25,7 @@
 }
 
 .text-cyan {
-    color: #00d8ff;
+    color: var(--color-primario);
     font-weight: 600;
 }
 
@@ -35,12 +35,12 @@
 }
 
 .footer-socials a {
-    color: #8b95a1;
+    color: var(--color-texto-suave);
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .footer-socials a:hover {
-    color: #00d8ff;
+    color: var(--color-primario);
     /* Iluminación cian en hover */
 }

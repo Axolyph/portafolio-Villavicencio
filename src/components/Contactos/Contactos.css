@@ -3,17 +3,17 @@ CONTENEDOR PRINCIPAL
 ========================================= */
 .contacto-section {
     padding: 6rem 5%;
-    background-color: #050810;
+    background-color: var(--color-secundario);
     /* Un fondo ligeramente más oscuro para
     cerrar la página */
-    color: #ffffff;
+    color: var(--color-texto);
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .contacto-main-title {
-    color: #00d8ff;
+    color: var(--color-primario);
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 4rem;
@@ -45,7 +45,7 @@ CONTENEDOR PRINCIPAL
 }
 
 .info-desc {
-    color: #8b95a1;
+    color: var(--color-texto-suave);
     line-height: 1.6;
     margin-bottom: 2.5rem;
 }
@@ -63,9 +63,9 @@ CONTENEDOR PRINCIPAL
 }
 
 .info-icon {
-    background-color: rgba(255, 255, 255, 0.03);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    color: #00d8ff;
+    background-color: rgba(var(--color-blanco-rgb), 0.03);
+    border: 1px solid var(--color-borde);
+    color: var(--color-primario);
     width: 45px;
     height: 45px;
     border-radius: 12px;
@@ -77,25 +77,25 @@ CONTENEDOR PRINCIPAL
 .item-label {
     display: block;
     font-size: 0.85rem;
-    color: #8b95a1;
+    color: var(--color-texto-suave);
     margin-bottom: 0.2rem;
 }
 
 .item-text {
     font-size: 1rem;
     font-weight: 500;
-    color: #ffffff;
+    color: var(--color-texto);
 }
 
 /* =========================================
             COLUMNA DERECHA (Formulario)
 ========================================= */
 .contacto-form-wrapper {
-    background-color: #111a2e;
+    background-color: var(--color-superficie);
     padding: 2.5rem;
     border-radius: 16px;
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    border: 1px solid var(--color-borde);
+    box-shadow: 0 10px 30px rgba(var(--color-negro-rgb), 0.2);
 }
 
 .contacto-form {
@@ -112,16 +112,16 @@ CONTENEDOR PRINCIPAL
 
 .form-group label {
     font-size: 0.9rem;
-    color: #a0aab2;
+    color: var(--color-texto-suave);
 }
 
 /* Estilos para los campos de entrada */
 .form-group input,
 .form-group textarea {
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.2);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    color: #ffffff;
+    background-color: rgba(var(--color-negro-rgb), 0.2);
+    border: 1px solid var(--color-borde);
+    color: var(--color-texto);
     padding: 0.8rem 1rem;
     border-radius: 8px;
     font-size: 1rem;
@@ -133,13 +133,13 @@ CONTENEDOR PRINCIPAL
 /* Efecto FOCUS (Borde Cyan al hacer clic) */
 .form-group input:focus,
 .form-group textarea:focus {
-    border-color: #00d8ff;
-    box-shadow: 0 0 0 2px rgba(0, 216, 255, 0.2);
+    border-color: var(--color-primario);
+    box-shadow: 0 0 0 2px rgba(var(--color-primario-rgb), 0.22);
 }
 
 .form-group input::placeholder,
 .form-group textarea::placeholder {
-    color: #4b5563;
+    color: var(--color-texto-suave);
 }
 
 .form-group textarea {
@@ -150,8 +150,8 @@ CONTENEDOR PRINCIPAL
                 BOTÓN ENVIAR
 ========================================= */
 .btn-submit {
-    background-color: #00d8ff;
-    color: #050810;
+    background-color: var(--color-primario);
+    color: var(--color-texto);
     border: none;
     padding: 1rem;
     border-radius: 8px;
@@ -163,7 +163,7 @@ CONTENEDOR PRINCIPAL
 }
 
 .btn-submit:hover {
-    background-color: #00bce6;
+    background-color: var(--color-primario-hover);
     transform: translateY(-2px);
 }
 

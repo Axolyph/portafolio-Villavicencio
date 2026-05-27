@@ -1,11 +1,28 @@
 :root {
-  --textoColor:s
+  --color-primario: #007acc;
+  --color-primario-hover: #1f8ad2;
+  --color-fondo: #1e1e1e;
+  --color-secundario: #252526;
+  --color-superficie: #2d2d30;
+  --color-superficie-2: #333337;
+  --color-texto: #d4d4d4;
+  --color-texto-suave: #9da5b4;
+  --color-borde: #3e3e42;
+  --color-exito: #4ec9b0;
+  --color-advertencia: #d7ba7d;
+  --color-primario-rgb: 0, 122, 204;
+  --color-blanco-rgb: 255, 255, 255;
+  --color-negro-rgb: 0, 0, 0;
 }
 
-/* En index.css */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
-  }
+}
+
+body {
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+}

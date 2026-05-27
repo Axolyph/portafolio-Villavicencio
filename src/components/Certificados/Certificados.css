@@ -1,7 +1,7 @@
 .certificados-section {
     padding: 5rem 5%;
-    background-color: #0b0f19;
-    color: #ffffff;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
     display: flex;
     justify-content: center;
 }
@@ -25,8 +25,8 @@
 }
 
 .certificado-card {
-    background-color: #111a2e;
-    border: 1px solid rgba(255, 255, 255, 0.05);
+    background-color: var(--color-superficie);
+    border: 1px solid var(--color-borde);
     border-radius: 12px;
     padding: 2rem;
 }
@@ -47,22 +47,22 @@
 }
 
 .badge-complete {
-    color: #6ee7b7;
+    color: var(--color-exito);
     /* Color Menta */
-    border-color: rgba(110, 231, 183, 0.3);
-    background-color: rgba(110, 231, 183, 0.05);
+    border-color: rgba(78, 201, 176, 0.3);
+    background-color: rgba(78, 201, 176, 0.08);
 }
 
 .badge-process {
-    color: #fbbf24;
+    color: var(--color-advertencia);
     /* Color Ámbar/Amarillo */
-    border-color: rgba(251, 191, 36, 0.3);
-    background-color: rgba(251, 191, 36, 0.05);
+    border-color: rgba(215, 186, 125, 0.3);
+    background-color: rgba(215, 186, 125, 0.08);
 }
 
 .cert-date {
     font-size: 0.9rem;
-    color: #8b95a1;
+    color: var(--color-texto-suave);
 }
 
 .certificado-card h3 {
@@ -72,7 +72,7 @@
 }
 
 .cert-inst {
-    color: #00d8ff;
+    color: var(--color-primario);
     font-size: 0.95rem;
     font-weight: 500;
 }
@@ -87,22 +87,22 @@
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    color: #00d8ff;
+    color: var(--color-primario);
     /* Tu color cian de acento */
     text-decoration: none;
     font-size: 0.9rem;
     font-weight: 600;
     padding: 0.6rem 1.2rem;
-    border: 1px solid rgba(0, 216, 255, 0.2);
+    border: 1px solid rgba(var(--color-primario-rgb), 0.2);
     border-radius: 8px;
-    background-color: rgba(0, 216, 255, 0.02);
+    background-color: rgba(var(--color-primario-rgb), 0.04);
     transition: all 0.3s ease;
 }
 
 /* Efecto Hover */
 .btn-download:hover {
-    background-color: rgba(0, 216, 255, 0.1);
-    border-color: #00d8ff;
+    background-color: rgba(var(--color-primario-rgb), 0.12);
+    border-color: var(--color-primario);
     transform: translateY(-2px);
 }
 
